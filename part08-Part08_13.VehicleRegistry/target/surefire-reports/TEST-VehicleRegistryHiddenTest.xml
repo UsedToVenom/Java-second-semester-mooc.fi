@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="15" failures="1" name="VehicleRegistryHiddenTest" time="0.125" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.24+8"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.24.8-hotspot\bin"/>
+    <property name="user.country.format" value="PL"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Mąż\Documents\NetBeansProjects\mooc-java-programming-ii\part08-Part08_13.VehicleRegistry"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="*Test"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Mąż\Documents\NetBeansProjects\mooc-java-programming-ii\part08-Part08_13.VehicleRegistry"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.24+8"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\M22B8~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\TMCBeans\java\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.24.8-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.24.8-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Mąż\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Program Files\TMCBeans\java\maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\TMCBeans\java\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Mąż"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="Mąż"/>
+    <property name="java.class.path" value="C:\Program Files\TMCBeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="error"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=*Test -Dfile.encoding=UTF-8 -T=1 -q test-compile surefire:test"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.24.8-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="pl"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.24"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="maven.home" value="C:\Program Files\TMCBeans\java\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-11.0.24+8"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="VehicleRegistryHiddenTest" name="noExtraVariablesInLicensePlate" time="0.015"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="hashCodeForLicensePlate" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="hasAHashMap" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="removeMethod" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="printOwners2" time="0.094"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="printOwners" time="0.016">
+    <failure message="The same name should not be repeated, print was incorrect when trying: 
+VehicleRegistry vr = new VehicleRegistry(); 
+vr.add( new LicensePlate(&quot;FI&quot;, &quot;AAA-111&quot;), &quot;Arto&quot;);
+vr.add( new LicensePlate(&quot;FI&quot;, &quot;BBB-222&quot;), &quot;Pekka&quot;);
+vr.add( new LicensePlate(&quot;FI&quot;, &quot;CCC-333&quot;), &quot;Arto&quot;);
+vr.printOwners()
+you printed:
+Pekka
+Arto
+Arto
+" type="java.lang.AssertionError">java.lang.AssertionError: The same name should not be repeated, print was incorrect when trying: 
+VehicleRegistry vr = new VehicleRegistry(); 
+vr.add( new LicensePlate(&quot;FI&quot;, &quot;AAA-111&quot;), &quot;Arto&quot;);
+vr.add( new LicensePlate(&quot;FI&quot;, &quot;BBB-222&quot;), &quot;Pekka&quot;);
+vr.add( new LicensePlate(&quot;FI&quot;, &quot;CCC-333&quot;), &quot;Arto&quot;);
+vr.printOwners()
+you printed:
+Pekka
+Arto
+Arto
+
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at VehicleRegistryHiddenTest.printOwners(VehicleRegistryHiddenTest.java:309)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="VehicleRegistryHiddenTest" name="noParamsConstructor" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="addMethod" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="printLicensePlatesMethod2" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="printLicensePlatesMethod" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="getMethod" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="addGetRemove" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="equalsForLicensePlate" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="classIsPublic" time="0"/>
+  <testcase classname="VehicleRegistryHiddenTest" name="noExtraVariables" time="0"/>
+</testsuite>

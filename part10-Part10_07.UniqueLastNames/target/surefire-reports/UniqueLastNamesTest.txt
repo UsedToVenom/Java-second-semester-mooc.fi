@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+Test set: UniqueLastNamesTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.23 s <<< FAILURE! - in UniqueLastNamesTest
+twoPersons(UniqueLastNamesTest)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: 
+When the input is:
+k
+Ada
+Lovelace
+1815
+k
+Grace
+Hopper
+1906
+quit
+
+The output must contain the consecuantial strings:
+Hopper
+Lovelace
+	at UniqueLastNamesTest.checkOrder(UniqueLastNamesTest.java:70)
+	at UniqueLastNamesTest.twoPersons(UniqueLastNamesTest.java:28)
+
+printedNamesAreUnique(UniqueLastNamesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+When the input is:
+k
+Ada
+Lovelace
+1815
+k
+Grace
+Hopper
+1906
+k
+Ada
+Lovelace
+1815
+quit
+
+The output must contain the consecuantial strings:
+Hopper
+Lovelace
+	at UniqueLastNamesTest.checkOrder(UniqueLastNamesTest.java:70)
+	at UniqueLastNamesTest.printedNamesAreUnique(UniqueLastNamesTest.java:54)
+
+threePersons(UniqueLastNamesTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+When the input is:
+k
+Alan
+Turing
+1912
+k
+Ada
+Lovelace
+1815
+k
+Grace
+Hopper
+1906
+quit
+
+The output must contain the consecuantial strings:
+Hopper
+Lovelace
+	at UniqueLastNamesTest.checkOrder(UniqueLastNamesTest.java:70)
+	at UniqueLastNamesTest.threePersons(UniqueLastNamesTest.java:41)
+
