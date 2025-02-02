@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class MagicSquare {
@@ -17,15 +18,36 @@ public class MagicSquare {
 
     // implement these three methods
     public ArrayList<Integer> sumsOfRows() {
-        return new ArrayList<>();
+        ArrayList<Integer> result = new ArrayList<>();
+        for (int i = 0; i < square[0].length; i++) {
+            result.add(Arrays.stream(square[i]).sum());
+        }
+        return result;
     }
 
     public ArrayList<Integer> sumsOfColumns() {
-        return new ArrayList<>();
+        ArrayList<Integer> result = new ArrayList<>();
+        for (int i = 0; i < square[0].length; i++) {
+            int sum = 0;
+            for (int j = 0; j < square[0].length; j++) {
+                sum += square[j][i];
+            }
+            result.add(sum);
+        }
+        return result;
     }
 
     public ArrayList<Integer> sumsOfDiagonals() {
-        return new ArrayList<>();
+        ArrayList<Integer> result = new ArrayList<>();
+        int diagOne = 0;
+        int diagTwo = 0;
+        for (int i = 0; i < square[0].length; i++) {
+            diagOne += square[i][i];
+            diagTwo += square[i][square[i].length - 1 - i];
+        }
+        result.add(diagOne);
+        result.add(diagTwo);
+        return result;
     }
 
     // ready-made helper methods -- don't touch these
