@@ -18,12 +18,13 @@ public class MagicSquareFactory {
 
             if (square.readValue(column, row) != 0) {
                 row += 2;
+                if(row==square.getHeight()+1){
+                    row=1;
+                }
 
-                if (column <= 0 && row == square.getHeight()) {
-                    column = 1;
-                    row = square.getHeight();
-                } else {
-                    column -= 1;
+                column-=1;
+                if(column<0){
+                    column=square.getWidth()-1;
                 }
             }
             square.placeValue(column, row, number);
