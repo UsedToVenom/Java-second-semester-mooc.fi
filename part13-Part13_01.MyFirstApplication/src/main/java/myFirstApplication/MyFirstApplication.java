@@ -16,7 +16,7 @@ public class MyFirstApplication extends Application{
     
      @Override
     public void start(Stage window) {
-        window.setTitle("Hello World!");
+        window.setTitle("My first application");
         window.show();
     }
 
