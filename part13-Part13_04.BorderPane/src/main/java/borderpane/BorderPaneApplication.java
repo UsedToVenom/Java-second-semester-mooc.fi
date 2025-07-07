@@ -28,9 +28,13 @@ public class BorderPaneApplication extends Application {
         Label south = new Label();
         south.setText("SOUTH");
         
+        Label west = new Label();
+        west.setText("WEST");
+        
         view.setTop(north);
         view.setRight(east);
         view.setBottom(south);
+        view.setLeft(west);
         
         
         
